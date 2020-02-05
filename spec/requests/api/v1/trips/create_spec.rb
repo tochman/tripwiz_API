@@ -27,4 +27,21 @@ RSpec.describe 'POST /api/v1/trips', type: :request do
     end
   end
 
+  describe 'Unsuccesfully when no city is nearby' do
+    before do
+      post "/api/v1/trips",
+      params: { lat: "9.3293",
+        lng: "18.0685" }
+    end
+
+
+    it 'returns a 200 response status' do
+      expect(response).to have_http_status 422
+    end
+
+    it 'returns error message' do
+      expect(response_json["error"]).to eq ["Destination can't be blank"]
+    end
+  end
+
 end
