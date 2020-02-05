@@ -1,14 +1,9 @@
 test:
   service: Disk
   root: <%= Rails.root.join("tmp/storage") %>
-  google_api_token: <%= Rails.application.credentials.dig(:google_api_token) %>
-
+  
 local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
-
-api:
-  google_api_token: <%= Rails.application.credentials.dig(:google_api_token) %>
-
 
 

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_02_04_115643) do
   enable_extension "plpgsql"
 
   create_table "trips", force: :cascade do |t|
-    t.string "name"
+    t.string "destination"
     t.string "coord_lat"
     t.string "coord_lng"
     t.datetime "created_at", precision: 6, null: false

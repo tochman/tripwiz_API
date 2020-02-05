@@ -3,9 +3,9 @@ RSpec.describe 'POST /api/v1/trips', type: :request do
   describe 'Succesfully adds coords for destination' do
     before do
       post "/api/v1/trips",
-      params: { destination: "Stockholm",
-                coord_lat: "59.3293",
-                coord_lng: "18.0685" }
+          params: { destination: "Stockholm",
+            coord_lat: "59.3293",
+            coord_lng: "18.0685" }
     end
 
     it 'returns a 200 response status' do
@@ -16,7 +16,7 @@ RSpec.describe 'POST /api/v1/trips', type: :request do
   describe 'Unsuccesfully when missing coords' do
     before do
       post "/api/v1/trips",
-      params: { destination: "Stockholm" }
+          params: { destination: "Stockholm" }
     end
 
     it 'returns a 200 response status' do
@@ -31,8 +31,8 @@ RSpec.describe 'POST /api/v1/trips', type: :request do
   describe 'Unsuccesfully when missing destination' do
     before do
       post "/api/v1/trips",
-      params: { coord_lat: "59.3293",
-                coord_lng: "18.0685" }
+          params: { coord_lat: "59.3293",
+            coord_lng: "18.0685" }
     end
 
     it 'returns a 200 response status' do
@@ -40,7 +40,7 @@ RSpec.describe 'POST /api/v1/trips', type: :request do
     end
 
     it 'returns error message' do
-      expect(response_json["error"]).to eq ["Name can't be blank"]
+      expect(response_json["error"]).to eq ["Destination can't be blank"]
     end
   end
 

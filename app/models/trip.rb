@@ -1,3 +1,3 @@
 class Trip < ApplicationRecord
-  validates_presence_of :name, :coord_lat, :coord_lng
+  validates_presence_of :destination, :coord_lat, :coord_lng
 end
