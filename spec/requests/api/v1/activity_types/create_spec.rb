@@ -3,9 +3,9 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
 
   describe 'Successfully creates activity type' do
     before do
-      post "/api/v1/activity_type",
-          params: { type: "museum",
-                    trip: trip
+      post "/api/v1/activity_types",
+          params: { activity_type: "museum",
+                    trip: trip.id
                    }
     end
 

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_02_06_123737) do
   enable_extension "plpgsql"
 
   create_table "activity_types", force: :cascade do |t|
-    t.string "type"
+    t.string "activity_type"
     t.bigint "trip_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

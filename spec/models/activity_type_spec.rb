@@ -1,6 +1,6 @@
 RSpec.describe ActivityType, type: :model do
   describe 'Database table' do
-    it { is_expected.to have_db_column :type }
+    it { is_expected.to have_db_column :activity_type }
     it { is_expected.to have_db_column :trip_id }
   end
 
