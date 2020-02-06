@@ -3,10 +3,14 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
 
   describe 'Successfully creates activity type' do
     before do
+      get_google_places_success
+      
       post "/api/v1/activity_types",
           params: { activity_type: "museum",
+                    number: 3,
                     trip: trip.id
                    }
+
     end
 
     it 'returns a 200 response status' do
