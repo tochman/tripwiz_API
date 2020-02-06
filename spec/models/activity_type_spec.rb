@@ -6,6 +6,8 @@ RSpec.describe ActivityType, type: :model do
 
   describe 'Associations' do
     it { is_expected.to belong_to :trip }
+    it { is_expected.to have_many :activities }
+
   end
 
   describe 'Factory' do
