@@ -16,6 +16,10 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
     it 'returns a 200 response status' do
       expect(response).to have_http_status 200
     end
+
+    it 'returns 3 activities' do
+      expect(response_json.length).to eq 3
+    end
   end
 
   describe 'Unsuccesfully when no params' do
