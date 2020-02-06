@@ -8,12 +8,14 @@ class Api::V1::ActivityTypesController < ApplicationController
     if @activity_type.persisted?
       response = create_activities
 
-      if response.length == @number.to_i
+      if response && response.length == @number.to_i
         render json: @activity_type, status: 200
       else
         @activity_type.destroy
-        render json: { error: trip.errors.full_messages }, status: 422
+        render json: { error: "Failed to create activity." }, status: 422
       end
+    else
+      render json: { error: @activity_type.errors.full_messages }, status: 422
     end
   end
 
@@ -39,12 +41,15 @@ class Api::V1::ActivityTypesController < ApplicationController
           lng: lng,
           activity_type_id: @activity_type.id
         )
-        activities << activity
+
+        if activity.persisted?
+          activities << activity
+        end
       end
 
-      return activities
+      activities
     else
-      return nil
+      nil
     end
   end
 

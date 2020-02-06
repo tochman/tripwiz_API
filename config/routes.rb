@@ -4,7 +4,6 @@ Rails.application.routes.draw do
       resources :trips, only: [:create]
       resources :activity_types, only: [:create]
       resources :activities, only: [:create]
-
     end
   end
 end

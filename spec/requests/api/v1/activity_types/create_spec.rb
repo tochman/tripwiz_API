@@ -18,7 +18,7 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
     end
   end
 
-  describe 'Unsuccesfully when no type' do
+  describe 'Unsuccesfully when no params' do
     before do
       post "/api/v1/activity_types"
     end
@@ -28,15 +28,18 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
     end
 
     it 'returns error message' do
-      expect(response_json["error"]).to eq ["It must have a type"]
+      expect(response_json["error"]).to eq ["Activity type can't be blank", "Trip must exist"]
     end
   end
 
-  describe 'Unsuccesfully when Activity did not persist' do
+  describe 'Unsuccesfully when not finding enough activities in radius' do
     before do
+      get_google_places_success
+
       post "/api/v1/activity_types",
-          params: { type: "museum",
-                    trip: trip
+          params: { activity_type: "museum",
+                    trip: trip.id,
+                    number: 4
                    }
     end
 
@@ -45,7 +48,7 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
     end
 
     it 'returns error message' do
-      expect(response_json["error"]).to eq ["Failed to create activity."]
+      expect(response_json["error"]).to eq "Failed to create activity."
     end
   end
 end
