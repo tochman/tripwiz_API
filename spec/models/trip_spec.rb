@@ -3,6 +3,7 @@ RSpec.describe Trip, type: :model do
     it { is_expected.to have_db_column :destination }
     it { is_expected.to have_db_column :lat }
     it { is_expected.to have_db_column :lng }
+    it { is_expected.to have_db_column :days }
   end
 
   describe 'Associations' do

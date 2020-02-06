@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_02_06_134032) do
     t.string "lng"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "days"
   end
 
   add_foreign_key "activities", "activity_types"

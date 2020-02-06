@@ -5,7 +5,8 @@ class Api::V1::TripsController < ApplicationController
     destination = get_destination(params)
     trip = Trip.create(destination: destination,
                        lat: params[:lat],
-                       lng: params[:lng])
+                       lng: params[:lng],
+                       days: params[:days])
 
     if trip.persisted?
       render json: trip
