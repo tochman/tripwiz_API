@@ -7,7 +7,7 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
       
       post "/api/v1/activity_types",
           params: { activity_type: "museum",
-                    number: 3,
+                    actTimes: 3,
                     trip: trip.id
                    }
 
@@ -43,7 +43,7 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
       post "/api/v1/activity_types",
           params: { activity_type: "museum",
                     trip: trip.id,
-                    number: 4
+                    actTimes: 4
                    }
     end
 

@@ -2,13 +2,13 @@
 
 class Api::V1::ActivityTypesController < ApplicationController
   def create
-    number = params[:number]
+    number_of_activities = params[:actTimes]
     activity_type = ActivityType.create(activity_type: params[:activity_type], trip_id: params[:trip])
 
     if activity_type.persisted?
-      activities = Activity.create_activities(activity_type, number)
+      activities = Activity.create_activities(activity_type, number_of_activities)
 
-      if activities && activities.length == number.to_i
+      if activities && activities.length == number_of_activities.to_i
         render json: activities, status: 200
       else
         activity_type.destroy

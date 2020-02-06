@@ -3,13 +3,13 @@ class Activity < ApplicationRecord
 
   belongs_to :activity_type
 
-  def self.create_activities(activity_type, number)
+  def self.create_activities(activity_type, number_of_activities)
     activities = []
-    response = Activity.get_activities(activity_type, number)
+    response = Activity.get_activities(activity_type)
 
-    if response['results'].length >= number.to_i
+    if response['results'].length >= number_of_activities.to_i
 
-      (0..number.to_i - 1).each do |i|
+      (0..number_of_activities.to_i - 1).each do |i|
         name = response['results'][i]['name']
         rating = response['results'][i]['rating']
         address = response['results'][i]['vicinity']
@@ -34,7 +34,7 @@ class Activity < ApplicationRecord
 
   private
 
-  def self.get_activities(activity_type, _number)
+  def self.get_activities(activity_type)
     radius = 5000
     lat = activity_type.trip.lat
     lng = activity_type.trip.lng
