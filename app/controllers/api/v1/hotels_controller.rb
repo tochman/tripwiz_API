@@ -22,18 +22,7 @@ class Api::V1::HotelsController < ApplicationController
       client_id: 'yAuxmqs01U77qZcA7EuPAKUzkqKaOqGi',
       client_secret: 'Kp4VhKkJkKBSNEM7'
     })
-    response = amadeus.shopping.hotel_offers.get({ 
-      cityCode: 'STO', 
-      ratings: 5, 
-      roomQuantity: 1, 
-      adults: 2, 
-      radius: 1, 
-      radiusUnit: 'KM',
-      paymentPolicy: 'NONE',
-      includeClosed: false,
-      bestRateOnly: false,
-      view: 'LIGHT',
-      sort: 'NONE'})
+    response = amadeus.shopping.hotel_offers.get(latitude: params[:lat], longitude: params[:lng], ratings: params[:rating], view: 'LIGHT')
     hotels = JSON.parse(response.body)
     hotelsFinal = hotels['data'].slice(0, 3)
   end
