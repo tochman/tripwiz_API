@@ -18,6 +18,7 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
     end
 
     it 'returns 3 activities' do
+      binding.pry
       expect(response_json.length).to eq 3
     end
   end

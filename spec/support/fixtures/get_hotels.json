@@ -1,0 +1,106 @@
+{
+  "results": [
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "PHSTOASH",
+        "chainCode": "PH",
+        "name": "At Six Preferred LVX",
+        "rating": "5",
+        "cityCode": "STO",
+        "latitude": 59.33084,
+        "longitude": 18.06703,
+        "hotelDistance": {
+          "distance": 0.2,
+          "distanceUnit": "KM"
+        },
+        "address": {
+          "lines": [
+            "BRUNKEBERGSTORG 6"
+          ],
+          "postalCode": "111 51",
+          "cityName": "STOCKHOLM",
+          "countryCode": "SE"
+        },
+        "contact": {
+          "phone": "+46 8 57882800",
+          "fax": "+00 000 0000"
+        },
+        "description": {
+          "lang": "en",
+          "text": "Elegance with a twist permeates At Six a New kind of exclusive urban lifestyle hotel you experience with all senses. From an unique Investment in modern art and contemporary design by award-winning London-based Universal Design Studio to a vibrant restaurant and bar scene with an outstanding rooftop restaurant crowning the building. Plus 343 spacious and stylish hotel rooms and suites 2000 sqm flexible event space wellness with gym and spa. Located right in the city center steps away from shopping nightlife sites and transports At Six is a perfect base for Stockholm stay."
+        },
+        "available": true
+      }
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "PHSTOASH",
+        "chainCode": "PH",
+        "name": "At Six Preferred LVX",
+        "rating": "5",
+        "cityCode": "STO",
+        "latitude": 59.33084,
+        "longitude": 18.06703,
+        "hotelDistance": {
+          "distance": 0.2,
+          "distanceUnit": "KM"
+        },
+        "address": {
+          "lines": [
+            "BRUNKEBERGSTORG 6"
+          ],
+          "postalCode": "111 51",
+          "cityName": "STOCKHOLM",
+          "countryCode": "SE"
+        },
+        "contact": {
+          "phone": "+46 8 57882800",
+          "fax": "+00 000 0000"
+        },
+        "description": {
+          "lang": "en",
+          "text": "Elegance with a twist permeates At Six a New kind of exclusive urban lifestyle hotel you experience with all senses. From an unique Investment in modern art and contemporary design by award-winning London-based Universal Design Studio to a vibrant restaurant and bar scene with an outstanding rooftop restaurant crowning the building. Plus 343 spacious and stylish hotel rooms and suites 2000 sqm flexible event space wellness with gym and spa. Located right in the city center steps away from shopping nightlife sites and transports At Six is a perfect base for Stockholm stay."
+        },
+        "available": true
+      }
+    },
+    {
+      "type": "hotel-offers",
+      "hotel": {
+        "type": "hotel",
+        "hotelId": "PHSTOASH",
+        "chainCode": "PH",
+        "name": "At Six Preferred LVX",
+        "rating": "5",
+        "cityCode": "STO",
+        "latitude": 59.33084,
+        "longitude": 18.06703,
+        "hotelDistance": {
+          "distance": 0.2,
+          "distanceUnit": "KM"
+        },
+        "address": {
+          "lines": [
+            "BRUNKEBERGSTORG 6"
+          ],
+          "postalCode": "111 51",
+          "cityName": "STOCKHOLM",
+          "countryCode": "SE"
+        },
+        "contact": {
+          "phone": "+46 8 57882800",
+          "fax": "+00 000 0000"
+        },
+        "description": {
+          "lang": "en",
+          "text": "Elegance with a twist permeates At Six a New kind of exclusive urban lifestyle hotel you experience with all senses. From an unique Investment in modern art and contemporary design by award-winning London-based Universal Design Studio to a vibrant restaurant and bar scene with an outstanding rooftop restaurant crowning the building. Plus 343 spacious and stylish hotel rooms and suites 2000 sqm flexible event space wellness with gym and spa. Located right in the city center steps away from shopping nightlife sites and transports At Six is a perfect base for Stockholm stay."
+        },
+        "available": true
+      }
+    }
+  ]
+}

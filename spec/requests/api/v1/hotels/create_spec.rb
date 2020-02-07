@@ -1,8 +1,11 @@
 RSpec.describe 'POST /api/v1/hotels', type: :request do
-  describe 'User can generate hotel suggestions ' do
+  let(:trip) { create(:trip) }
 
+  describe 'User can generate hotel suggestions ' do
     describe 'successfully' do 
       before do
+        WebMock.disable!
+        
         post '/api/v1/hotels',
           params: { 
             lat: 59.3293,

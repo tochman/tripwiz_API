@@ -21,6 +21,11 @@ module WebmockStubs
       .to_return(status: 200, body: fixture_response('get_places_museums.json'))
   end
 
+  def hotels_success
+    stub_request(:post, "https://api.amadeus.com/v1/security/oauth2/token").
+          to_return(status: 200, body: fixture_response('get_hotels.json'), headers: {})
+  end
+
   private
 
   def fixture_response(filename)
