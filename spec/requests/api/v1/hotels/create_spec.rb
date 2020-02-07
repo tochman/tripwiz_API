@@ -11,7 +11,7 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
             lat: 59.3293,
             lng: 18.0685,
             rating: 5,
-            trip_id: 1
+            trip_id: trip.id
             }
       end
       
