@@ -32,7 +32,7 @@ class Api::V1::HotelsController < ApplicationController
       paymentPolicy: 'NONE',
       includeClosed: false,
       bestRateOnly: false,
-      view: 'FULL',
+      view: 'LIGHT',
       sort: 'NONE'})
     hotels = JSON.parse(response.body)
     hotelsFinal = hotels['data'].slice(0, 3)
