@@ -32,7 +32,7 @@ RSpec.describe 'POST /api/v1/activity_type', type: :request do
     end
 
     it 'returns error message' do
-      expect(response_json["error"]).to eq ["Activity type can't be blank", "Trip must exist"]
+      expect(response_json["error"]).to eq "Missing parameters"
     end
   end
 
