@@ -36,11 +36,12 @@ class Api::V1::HotelsController < ApplicationController
 
   def get_hotels(params)
     amadeus = Amadeus::Client.new({hostname: :production,
-      client_id: 'yAuxmqs01U77qZcA7EuPAKUzkqKaOqGi',
-      client_secret: 'Kp4VhKkJkKBSNEM7'
+      client_id: Rails.application.credentials.client_id,
+      client_secret: Rails.application.credentials.client_secret
     })
     response = amadeus.shopping.hotel_offers.get(latitude: params[:lat], longitude: params[:lng], ratings: params[:rating], view: 'LIGHT')
     hotels = JSON.parse(response.body)
     hotelsFinal = hotels['data'].slice(0, 3)
   end 
 end
+

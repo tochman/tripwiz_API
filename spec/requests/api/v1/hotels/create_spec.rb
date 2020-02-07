@@ -22,5 +22,3 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
 
   end
 end
-
-
