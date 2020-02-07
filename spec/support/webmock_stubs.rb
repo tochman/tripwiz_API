@@ -17,7 +17,7 @@ module WebmockStubs
   end
 
   def get_google_places_success
-    stub_request(:get, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=#{Rails.application.credentials.google_api_token}&location=59.334,18.063&radius=5000&type=museum")
+    stub_request(:get, %r|https://maps.googleapis.com/maps/api/place/nearbysearch/|)
       .to_return(status: 200, body: fixture_response('get_places_museums.json'))
   end
 
