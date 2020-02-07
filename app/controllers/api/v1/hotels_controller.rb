@@ -18,8 +18,24 @@ class Api::V1::HotelsController < ApplicationController
   private
 
   def get_hotels(params)
-    response = JSON.parse RestClient.get "https://api.amadeus.com/v2/shopping/hotel-offers?latitude=#{params[:lat]}&longitude=#{params[:lng]}&roomQuantity=1&adults=2&radius=1&radiusUnit=KM&ratings=5&currency=SEK&paymentPolicy=NONE&includeClosed=false&bestRateOnly=true&view=FULL&sort=NONE&page[limit]=3"
-    hotels = response
+    amadeus = Amadeus::Client.new({hostname: :production,
+      client_id: 'yAuxmqs01U77qZcA7EuPAKUzkqKaOqGi',
+      client_secret: 'Kp4VhKkJkKBSNEM7'
+    })
+    response = amadeus.shopping.hotel_offers.get({ 
+      cityCode: 'STO', 
+      ratings: 5, 
+      roomQuantity: 1, 
+      adults: 2, 
+      radius: 1, 
+      radiusUnit: 'KM',
+      paymentPolicy: 'NONE',
+      includeClosed: false,
+      bestRateOnly: false,
+      view: 'FULL',
+      sort: 'NONE'})
+    hotels = JSON.parse(response.body)
+    hotelsFinal = hotels['data'].slice(0, 3)
   end
   
 end

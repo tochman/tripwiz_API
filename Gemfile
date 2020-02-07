@@ -9,7 +9,7 @@ gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors', require: 'rack/cors'
 gem 'rest-client'
-
+gem 'amadeus'
 
 group :development, :test do
   gem 'rspec-rails'

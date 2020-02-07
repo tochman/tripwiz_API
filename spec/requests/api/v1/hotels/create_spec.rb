@@ -13,6 +13,7 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
       end
 
       it 'returns a 200 response status' do
+        binding.pry
         expect(response).to have_http_status 200
       end
     end
