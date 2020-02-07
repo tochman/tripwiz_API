@@ -2,9 +2,9 @@
 
 class Api::V1::ActivityTypesController < ApplicationController
   def create
-    number_of_activities = permitted_params.require(:actTimes)
-    activity_type = ActivityType.create(activity_type: permitted_params.require(:activity_type),
-                                        trip_id: permitted_params.require(:trip))
+    number_of_activities = params.require(:actTimes)
+    activity_type = ActivityType.create(activity_type: params.require(:activity_type),
+                                        trip_id: params.require(:trip))
 
     if activity_type.persisted?
       activities = Activity.create_activities(activity_type, number_of_activities)
@@ -18,11 +18,5 @@ class Api::V1::ActivityTypesController < ApplicationController
     else
       render json: { error: activity_type.errors.full_messages }, status: 422
     end
-  end
-
-  private
-
-  def permitted_params
-    params.permit(:activity_type, :actTimes, :trip)
   end
 end
