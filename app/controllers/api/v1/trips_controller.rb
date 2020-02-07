@@ -1,11 +1,12 @@
-class Api::V1::TripsController < ApplicationController
+# frozen_string_literal: true
 
+class Api::V1::TripsController < ApplicationController
   def create
     destination = get_destination(params)
     trip = Trip.create(destination: destination,
-      lat: params[:lat],
-      lng: params[:lng],
-      days: params[:days])
+                       lat: params[:lat],
+                       lng: params[:lng],
+                       days: params[:days])
 
 
 
@@ -22,5 +23,4 @@ class Api::V1::TripsController < ApplicationController
     response = JSON.parse RestClient.get "http://gd.geobytes.com/GetNearbyCities?radius='1500'&Latitude=#{params[:lat]}&Longitude=#{params[:lng]}&limit=1"
     destination = response[0][1]
   end
-
 end
