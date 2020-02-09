@@ -19,10 +19,10 @@ class Api::V1::HotelsController < ApplicationController
       lng = avg_lng.round(5)
     end
 
-    getHotels = get_hotels(params, lat, lng)
+    getHotels = get_hotels(params, lat, lng) 
     hotels = []
 
-    if getHotels.length >= 3
+    if getHotels != 'error'
       getHotels.each do |i|
         name = i['hotel']['name']
         lat = i['hotel']['latitude']
@@ -46,7 +46,7 @@ class Api::V1::HotelsController < ApplicationController
     if hotels != []
       render json: hotels
     else
-      render json: { error: "No hotels found, try a different hotel rating."}, status: 422
+      render json: { error: "No hotels found, try a different hotel rating or location."}, status: 422
     end
   end
 
@@ -57,7 +57,11 @@ class Api::V1::HotelsController < ApplicationController
       client_id: Rails.application.credentials.client_id,
       client_secret: Rails.application.credentials.client_secret
     })
-    response = amadeus.shopping.hotel_offers.get(latitude: lat, longitude: lng, ratings: params[:rating], radius: 3, radiusUnit: 'KM', view: 'LIGHT')
+    begin
+      response = amadeus.shopping.hotel_offers.get(latitude: lat, longitude: lng, ratings: params[:rating], radius: 3, radiusUnit: 'KM', view: 'LIGHT')
+    rescue Amadeus::ResponseError => error
+      return 'error'
+    end
     hotels = JSON.parse(response.body)
     hotelsFinal = hotels['data'].slice(0, 3)
   end 
