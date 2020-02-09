@@ -5,7 +5,7 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
     let!(:activity) { create_list(:activity, 3, activity_type_id: activity_type.id) } 
     describe 'successfully' do
       before do
-        # WebMock.disable!
+        WebMock.disable!
         
         post '/api/v1/hotels',
           params: { 
