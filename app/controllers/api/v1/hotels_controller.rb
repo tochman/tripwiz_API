@@ -1,7 +1,24 @@
 class Api::V1::HotelsController < ApplicationController
   
   def create
-    getHotels = get_hotels(params)
+    # currentTrip = Trip.find(params[:trip_id])
+    activity_type = ActivityType.find_by(trip_id: params[:trip_id])
+    
+    if activity_type.activities != []
+      lats = []
+      longs = []
+      activity_type.activities.each do |i|
+        lat = i['lat']
+        lng = i['lng']
+        
+        lats << lat.to_f
+        longs << lng.to_f
+      end
+      avg_lat = lats.inject{ |sum, el| sum + el } / lats.size
+      avg_lng = longs.inject{ |sum, el| sum + el } / longs.size
+    end
+    
+    getHotels = get_hotels(params, avg_lat, avg_lng)
     hotels = []
 
     if getHotels.length >= 3
@@ -34,12 +51,12 @@ class Api::V1::HotelsController < ApplicationController
 
   private
 
-  def get_hotels(params)
+  def get_hotels(params, avg_lat, avg_lng)
     amadeus = Amadeus::Client.new({hostname: :production,
       client_id: Rails.application.credentials.client_id,
       client_secret: Rails.application.credentials.client_secret
     })
-    response = amadeus.shopping.hotel_offers.get(latitude: params[:lat], longitude: params[:lng], ratings: params[:rating], view: 'LIGHT')
+    response = amadeus.shopping.hotel_offers.get(latitude: avg_lng, longitude: avg_lng, ratings: params[:rating], view: 'LIGHT')
     hotels = JSON.parse(response.body)
     hotelsFinal = hotels['data'].slice(0, 3)
   end 
