@@ -15,19 +15,19 @@ class Api::V1::HotelsController < ApplicationController
       end
       avg_lat = lats.inject{ |sum, el| sum + el } / lats.size
       avg_lng = longs.inject{ |sum, el| sum + el } / longs.size
-      avg_lat = avg_lat.truncate(5)
-      avg_lng = avg_lng.truncate(5)
+      lat = avg_lat.round(5)
+      lng = avg_lng.round(5)
     end
-    
-    getHotels = get_hotels(params, avg_lat, avg_lng)
+
+    getHotels = get_hotels(params, lat, lng)
     hotels = []
-    
+
     if getHotels.length >= 3
       getHotels.each do |i|
         name = i['hotel']['name']
         lat = i['hotel']['latitude']
         lng = i['hotel']['longitude']
-        price = i['hotel']['longitude']
+        price = i['offers'][0]['price']['total']
         address = i['hotel']['address']['lines'][0]
         
         hotel = Hotel.create(
@@ -52,14 +52,12 @@ class Api::V1::HotelsController < ApplicationController
 
   private
 
-  def get_hotels(params, avg_lat, avg_lng)
-    
+  def get_hotels(params, lat, lng)
     amadeus = Amadeus::Client.new({hostname: :production,
       client_id: Rails.application.credentials.client_id,
       client_secret: Rails.application.credentials.client_secret
     })
-    binding.pry
-    response = amadeus.shopping.hotel_offers.get(latitude: avg_lat, longitude: avg_lng, ratings: params[:rating], view: 'LIGHT')
+    response = amadeus.shopping.hotel_offers.get(latitude: lat, longitude: lng, ratings: params[:rating], radius: 3, radiusUnit: 'KM', view: 'LIGHT')
     hotels = JSON.parse(response.body)
     hotelsFinal = hotels['data'].slice(0, 3)
   end 

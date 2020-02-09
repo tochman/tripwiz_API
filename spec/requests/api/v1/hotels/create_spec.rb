@@ -15,8 +15,15 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
       end
       
       it 'returns a 200 response status' do
-        binding.pry
         expect(response).to have_http_status 200
+      end
+
+      it 'returns 3 hotels' do
+        expect(response_json.length).to eq 3
+      end
+
+      it 'returns hotel information' do
+        expect(response_json[0]['name']).to eq 'At Six Preferred LVX'
       end
     end
 
