@@ -46,7 +46,7 @@ class Api::V1::HotelsController < ApplicationController
     if hotels != []
       render json: hotels
     else
-      render json: { error: "No hotels found, try a different hotel rating or location."}, status: 422
+      render json: { error: "No hotels found, try a different hotel rating or location."}, status: 400
     end
   end
 
