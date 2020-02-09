@@ -1,7 +1,7 @@
 class Api::V1::HotelsController < ApplicationController
   
   def create
-    activity_type = ActivityType.find_by(trip_id: params[:trip_id])
+    activity_type = ActivityType.find_by(trip_id: params[:trip])
     
     if activity_type.activities != []
       lats = []
@@ -36,13 +36,13 @@ class Api::V1::HotelsController < ApplicationController
           lng: lng,
           price: price,
           address: address,
-          trip_id: params[:trip_id]
+          trip_id: params[:trip]
         )
         hotels << hotel if hotel.persisted?
       end
       hotels
     end
-    
+    binding.pry
     if hotels != []
       render json: hotels
     else
@@ -58,7 +58,7 @@ class Api::V1::HotelsController < ApplicationController
       client_secret: Rails.application.credentials.client_secret
     })
     begin
-      response = amadeus.shopping.hotel_offers.get(latitude: lat, longitude: lng, ratings: params[:rating], radius: 3, radiusUnit: 'KM', view: 'LIGHT')
+      response = amadeus.shopping.hotel_offers.get(latitude: lat, longitude: lng, ratings: params[:budget], radius: 3, radiusUnit: 'KM', view: 'LIGHT')
     rescue Amadeus::ResponseError => error
       return 'error'
     end
