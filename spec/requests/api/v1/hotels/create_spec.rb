@@ -42,7 +42,7 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
             }
       end
       
-      it 'returns a 422 response status' do
+      it 'returns a 400 response status' do
         expect(response).to have_http_status 400
       end
 
