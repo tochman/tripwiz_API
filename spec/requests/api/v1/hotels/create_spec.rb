@@ -9,8 +9,8 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
         
   #       post '/api/v1/hotels',
   #         params: { 
-  #           rating: 5,
-  #           trip_id: Trip.last.id
+  #           budget: 5,
+  #           trip: Trip.last.id
   #           }
   #     end
       
@@ -37,8 +37,8 @@ RSpec.describe 'POST /api/v1/hotels', type: :request do
         
   #       post '/api/v1/hotels',
   #         params: { 
-  #           rating: 5,
-  #           trip_id: Trip.last.id
+  #           budget: 5,
+  #           trip: Trip.last.id
   #           }
   #     end
       

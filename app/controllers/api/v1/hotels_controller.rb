@@ -42,7 +42,7 @@ class Api::V1::HotelsController < ApplicationController
       end
       hotels
     end
-    binding.pry
+    
     if hotels != []
       render json: hotels
     else
