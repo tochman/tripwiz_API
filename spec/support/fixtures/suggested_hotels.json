@@ -1,0 +1,1073 @@
+{
+	"data": [
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "PHSTOASH",
+				"chainCode": "PH",
+				"dupeId": "700434783",
+				"name": "At Six Preferred LVX",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.33084,
+				"longitude": 18.06703,
+				"hotelDistance": {
+					"distance": 0.3,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"BRUNKEBERGSTORG 6"
+					],
+					"postalCode": "111 51",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "+46 8 57882800",
+					"fax": "+00 000 0000"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/8361F3F2B4D9400784C4FE39F61E0620/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "567C3AAA7FA8E306C39E9034574CF99CC87B25484B313C185C0DE0E908170D05",
+					"rateCode": "BAR",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"commission": {
+						"percentage": "10.00"
+					},
+					"room": {
+						"type": "G1K",
+						"typeEstimated": {
+							"category": "STUDIO",
+							"beds": 1,
+							"bedType": "KING"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "BEST AVAILABLE RATE \nSTANDARD 1 KING-26SQM-COURTYARD VIEW WIFI INCL-HDTV-SOFA-MINIBAR\nLUX LINENS-SAFE Spacious rooms by Universal Design Studio"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "2095.00",
+						"variations": {
+							"average": {
+								"total": "2095.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "2095.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"guarantee": {
+							"acceptedPayments": {
+								"creditCards": [
+									"UP",
+									"EC",
+									"VI",
+									"CA",
+									"DC",
+									"AX"
+								],
+								"methods": [
+									"TRAVEL_AGENT_ID",
+									"CREDIT_CARD"
+								]
+							}
+						},
+						"paymentType": "guarantee",
+						"cancellation": {
+							"numberOfNights": 1,
+							"deadline": "2020-02-10T16:00:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=PHSTOASH&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "LWSTO502",
+				"chainCode": "LW",
+				"dupeId": "700007831",
+				"name": "Grand Hotel Stockholm",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.32956,
+				"longitude": 18.07564,
+				"hotelDistance": {
+					"distance": 0.6,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"SODRA BLASIEHOLMSHAMNEN 8",
+						"P.O. BOX 16424"
+					],
+					"postalCode": "SE-103 27",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "+46 8 6793500",
+					"fax": "+46 8 6118686"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/C84C7DC953D04584A290F0AECA4C2585/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "D17A1D487E0B5A5DDF54A1D2D4422BF3D8D88667E78A53F134798109AD56B259",
+					"rateCode": "BB0",
+					"rateFamilyEstimated": {
+						"code": "RAC",
+						"type": "P"
+					},
+					"commission": {
+						"percentage": "9.00"
+					},
+					"room": {
+						"type": "A1T",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "SINGLE"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "DAILY RATE \nSingle Non View Room 15SQM160SQFT Sidestreet or Courtyard Free \ninternet Single Non View Room 15SQM160SQFT Facing Side street or"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "2900.00",
+						"variations": {
+							"average": {
+								"base": "2589.18"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "2900.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"guarantee": {
+							"acceptedPayments": {
+								"creditCards": [
+									"EC",
+									"VI",
+									"CA",
+									"DC",
+									"AX"
+								],
+								"methods": [
+									"CREDIT_CARD"
+								]
+							}
+						},
+						"paymentType": "guarantee",
+						"cancellation": {
+							"numberOfNights": 1,
+							"deadline": "2020-02-10T12:00:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=LWSTO502&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "LXSTOLYH",
+				"chainCode": "LX",
+				"dupeId": "700059965",
+				"name": "Lydmar Hotel",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.32834,
+				"longitude": 18.07776,
+				"hotelDistance": {
+					"distance": 0.7,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"SOEDRA BLASIEHOLMSHAMNEN 2"
+					],
+					"postalCode": "10324",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "46-8-223160",
+					"fax": "46-8-223170",
+					"email": "info@lydmar.com"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/AEBC20BBF0534E4FA526E870B565AE9D/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "738906F45807B838CF570BAD47180A5F33DA747EC05E45EF9FD35C3C241A7C28",
+					"rateCode": "P18",
+					"rateFamilyEstimated": {
+						"code": "PRO",
+						"type": "P"
+					},
+					"commission": {
+						"percentage": "10.00"
+					},
+					"boardType": "BREAKFAST",
+					"room": {
+						"type": "S1S",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "KING"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "SLH ADVANCE PURCHASE RATE \nLarge King Room -50 sqm -King Bed Park or Water View -Living \nRoom-Free Wifi The bathroom is connected to the bedroom there is"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "5096.00",
+						"variations": {
+							"average": {
+								"total": "5096.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "5096.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"deposit": {
+							"acceptedPayments": {
+								"creditCards": [
+									"VI",
+									"CA",
+									"DC",
+									"AX"
+								],
+								"methods": [
+									"CREDIT_CARD"
+								]
+							}
+						},
+						"paymentType": "deposit"
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=LXSTOLYH&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "PHSTONLH",
+				"chainCode": "PH",
+				"dupeId": "700020445",
+				"name": "Nordic Light Hotel LIF",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.33251,
+				"longitude": 18.05689,
+				"hotelDistance": {
+					"distance": 0.7,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"VASAPLAN 7"
+					],
+					"postalCode": "111 20",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "+46 8 50563200",
+					"fax": "+46 8 50563040"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/B943B023072E49928960A8F2E0C79785/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "0C1EFD69DD2239AA5EC96923D475EBF19EA8593AD8798C027A042EAB89DC419B",
+					"rateCode": "RA1",
+					"commission": {
+						"percentage": "10.00"
+					},
+					"boardType": "BREAKFAST",
+					"room": {
+						"type": "C1Q",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "QUEEN"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "NORDIC RATE \nSTANDARD QUEEN-18 SQM-194 SQFT-FREE BREAKFAST FREE WIFI-SAFE-\nSHOWER-MINIBAR-RENOVATED 2017 NORDIC DESIGN-STREET OR COURTYARD"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "1570.00",
+						"variations": {
+							"average": {
+								"total": "1570.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "1570.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"guarantee": {
+							"acceptedPayments": {
+								"creditCards": [
+									"UP",
+									"EC",
+									"VI",
+									"CA",
+									"JC",
+									"DC",
+									"AX"
+								],
+								"methods": [
+									"CREDIT_CARD"
+								]
+							}
+						},
+						"paymentType": "guarantee",
+						"cancellation": {
+							"numberOfNights": 1,
+							"deadline": "2020-02-10T16:00:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=PHSTONLH&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "RDSTOS11",
+				"chainCode": "RD",
+				"dupeId": "700021316",
+				"name": "RADISSON COLLECTION STRAND HOTEL STOCKHOLM",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.33092,
+				"longitude": 18.07715,
+				"hotelDistance": {
+					"distance": 0.7,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"NYBROKAJEN 9",
+						"P.O. BOX 16396"
+					],
+					"postalCode": "10327",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "+46 8 50 66 4000",
+					"fax": "+46 8 50664001",
+					"email": "sales.sweden@radissonhotels.com"
+				}
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "D4AAF182A963635F8610FEE4C53255E43EB0FA883AD6C5CA66F5879D32F281DF",
+					"rateCode": "RAC",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"commission": {
+						"amount": "0",
+						"percentage": "0"
+					},
+					"room": {
+						"type": "A1T",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "TWIN"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "FLEXIBLE RATE\nINDIVIDUAL ROOM-1T-NON-SMOKING"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "1695.00",
+						"variations": {
+							"average": {
+								"total": "1695.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "1695.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"guarantee": {
+							"acceptedPayments": {
+								"creditCards": [
+									"AX",
+									"DN",
+									"EC",
+									"CA",
+									"VI"
+								],
+								"methods": [
+									"TRAVEL_AGENT_ID",
+									"CREDIT_CARD"
+								]
+							}
+						},
+						"paymentType": "guarantee",
+						"cancellation": {
+							"deadline": "2020-02-10T16:00:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=RDSTOS11&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "DPSTONBJ",
+				"chainCode": "DP",
+				"dupeId": "700148382",
+				"name": "Nobis Hotel Stockholm a Member of Design Hotels",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.33368,
+				"longitude": 18.07354,
+				"hotelDistance": {
+					"distance": 0.8,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"NORRMALMSTORG 2-4"
+					],
+					"postalCode": "11186",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "+46 8 6141000",
+					"fax": "+46 8 6141045",
+					"email": "reservations@nobishotel.com"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/7D033D083F1C4BE49022DD05873E6D79/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "8834B85122318C68E4829833853248DA44A4EDDF30FED42994C0071C4BD1FD7C",
+					"rateCode": "RAC",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"commission": {
+						"amount": "0",
+						"percentage": "0"
+					},
+					"room": {
+						"type": "REG",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "SINGLE"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "Best Available rate, see Rate Rules\nSmall Single, 1 Twin/Single Bed(s), 15sqm/161sq\nft, Wireless internet, for a fee, TV"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "1790.00",
+						"variations": {
+							"average": {
+								"base": "1790.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "1790.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"paymentType": "guarantee",
+						"cancellation": {
+							"numberOfNights": 1,
+							"deadline": "2020-02-10T18:00:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=DPSTONBJ&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "WWSTODIP",
+				"chainCode": "WW",
+				"dupeId": "700006737",
+				"name": "Hotel Diplomat-Worldhotel",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.33199,
+				"longitude": 18.0803,
+				"hotelDistance": {
+					"distance": 0.9,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"STRANDVAGEN 7C",
+						"BOX 14959"
+					],
+					"postalCode": "11456",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "46-8-4596800",
+					"fax": "46-8-4596820",
+					"email": "info@diplomathotel.com"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/35612C0FC1B94B90A97D099D94F417FB/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "F5A421803C3910D93D2C64C88088381F16E1F6FB25C345DED7B0D11CB4912217",
+					"rateCode": "S1W",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"commission": {
+						"percentage": "10.00"
+					},
+					"room": {
+						"type": "C1T",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "SINGLE"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "WORLD RAINBOW HOTELS BAR, EXCL. BREAKFAST \nStandard room-Oversized Single bed-12-19 sqm Working desk-Free \nWIFI-Courtyard View"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "2150.00",
+						"variations": {
+							"average": {
+								"base": "1919.75"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "2150.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"guarantee": {
+							"acceptedPayments": {
+								"creditCards": [
+									"EC",
+									"VI",
+									"CA",
+									"AX"
+								],
+								"methods": [
+									"CREDIT_CARD"
+								]
+							}
+						},
+						"paymentType": "guarantee",
+						"cancellation": {
+							"numberOfNights": 1,
+							"deadline": "2020-02-09T00:00:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=WWSTODIP&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "DPSTOCLJ",
+				"chainCode": "DP",
+				"dupeId": "700219785",
+				"name": "Miss Clara by Nobis, a Member of Design Hotels",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.33763,
+				"longitude": 18.06157,
+				"hotelDistance": {
+					"distance": 1.1,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"SVEAVAGEN 48"
+					],
+					"postalCode": "111 34",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"fax": "+46 8 4406799",
+					"phone": "+46 8 4406700",
+					"email": "info@missclarahotel.com"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/8B85BBC6F79442DF919214D0D1D546E6/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "B5B382DF6B22FF391530526F8CC6C2DAD66B48DFEBBFBBBB05C89DF952EF61C1",
+					"rateCode": "RAC",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"commission": {
+						"amount": "0",
+						"percentage": "0"
+					},
+					"room": {
+						"type": "REG",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "QUEEN"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "Best Available Rate, includes WiFi, see Rate Rules\nStandard Single, 1 Queen, 16sqm/172sqft-17sqm/1\n83sqft, Wireless internet, complimentary, TV"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "1790.00",
+						"variations": {
+							"average": {
+								"base": "1790.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "1790.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"paymentType": "guarantee",
+						"cancellation": {
+							"deadline": "2020-02-09T23:59:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=DPSTOCLJ&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "DPSTOSKJ",
+				"chainCode": "DP",
+				"dupeId": "700136867",
+				"name": "Hotel Skeppsholmen Stockholm a Member of Design Hotels",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.3247,
+				"longitude": 18.08758,
+				"hotelDistance": {
+					"distance": 1.3,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"GROENA GANGEN 1"
+					],
+					"postalCode": "11149",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "+46 8 4072300",
+					"fax": "+46 8 4072399",
+					"email": "info@hotelskeppsholmen.se"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/D80DF96BD62A4F8D9FCE5ADABA9789D3/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "D77C74E37753A6431ED0A7CDE65FD124E3CAFB82873C1DF15B712B6E94DE8B1F",
+					"rateCode": "RAC",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"room": {
+						"type": "REG",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 1,
+							"bedType": "QUEEN"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "Best Available Rate with Buffet Breakfast, see Rate Rules\nStandard, 1 Queen, 14sqm/151sqft-16sqm/172sqft,\n Wireless internet, complimentary"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "1790.00",
+						"variations": {
+							"average": {
+								"base": "1790.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "1790.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"paymentType": "guarantee",
+						"cancellation": {
+							"deadline": "2020-02-09T23:59:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=DPSTOSKJ&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "DPSTODNJ",
+				"chainCode": "DP",
+				"dupeId": "700782970",
+				"name": "Blique by Nobis, Stockholm, a Member of Design Hotels",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.34591,
+				"longitude": 18.03605,
+				"hotelDistance": {
+					"distance": 2.6,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"GAVLEGATAN 18   "
+					],
+					"postalCode": "11330",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "+46 8 55766600",
+					"email": "info@bliquebynobis.se"
+				},
+				"media": [
+					{
+						"uri": "https://d2573qu6qrjt8c.cloudfront.net/7CE4D8D292844456BEEDBCDFFF90F133/B.JPEG",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "B528565595BD5AA3BB8D86722767373E3ED8E5924F0127B40D67B0DCC45FA89A",
+					"rateCode": "RAC",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"room": {
+						"type": "REG",
+						"typeEstimated": {
+							"beds": 1,
+							"bedType": "DOUBLE"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "Best Available rate\nSleep Tight, 1 Double, 10sqm/108sqft, Wireless \ninternet, complimentary, flatscreen TV"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "890.00",
+						"variations": {
+							"average": {
+								"base": "890.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "890.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"paymentType": "guarantee",
+						"cancellation": {
+							"deadline": "2020-02-09T23:59:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=DPSTODNJ&view=LIGHT"
+		},
+		{
+			"type": "hotel-offers",
+			"hotel": {
+				"type": "hotel",
+				"hotelId": "DSSTOSTA",
+				"chainCode": "DS",
+				"dupeId": "700061679",
+				"name": "Stallmastaregarden Hotel",
+				"rating": "5",
+				"cityCode": "STO",
+				"latitude": 59.35199,
+				"longitude": 18.04425,
+				"hotelDistance": {
+					"distance": 2.9,
+					"distanceUnit": "KM"
+				},
+				"address": {
+					"lines": [
+						"NORRTULL "
+					],
+					"postalCode": "113 47",
+					"cityName": "STOCKHOLM",
+					"countryCode": "SE"
+				},
+				"contact": {
+					"phone": "46-8-6101300",
+					"fax": "46-8-6101340",
+					"email": "info@stallmastaregarden.se"
+				},
+				"media": [
+					{
+						"uri": "http://multimediarepository.amadeus.com/cmr/retrieve/hotel/CB3FA884CB744DA39F4E70C7C2E8E670",
+						"category": "EXTERIOR"
+					}
+				]
+			},
+			"available": true,
+			"offers": [
+				{
+					"id": "6BA952D7CDEF905B7583A07B1AA6CF86110FFD0AB7A684978D7784B90C57AB5B",
+					"rateCode": "RAC",
+					"rateFamilyEstimated": {
+						"code": "BAR",
+						"type": "P"
+					},
+					"commission": {
+						"percentage": "9.00"
+					},
+					"room": {
+						"type": "C2T",
+						"typeEstimated": {
+							"category": "STANDARD_ROOM",
+							"beds": 2,
+							"bedType": "TWIN"
+						},
+						"description": {
+							"lang": "EN",
+							"text": "BEST AVAILABLE RATE \nClassic -19sqm -204sqft -King Bed or 2 Twin Beds -Free WLAN -\nSleeps 2 Shower or Bathtub -Writing Desk -Bathroom Amenities -TV"
+						}
+					},
+					"guests": {
+						"adults": 1
+					},
+					"price": {
+						"currency": "SEK",
+						"total": "1495.00",
+						"variations": {
+							"average": {
+								"total": "1495.00"
+							},
+							"changes": [
+								{
+									"startDate": "2020-02-10",
+									"endDate": "2020-02-11",
+									"total": "1495.00"
+								}
+							]
+						}
+					},
+					"policies": {
+						"guarantee": {
+							"acceptedPayments": {
+								"creditCards": [
+									"EC",
+									"VI",
+									"CA",
+									"AX"
+								],
+								"methods": [
+									"CREDIT_CARD"
+								]
+							}
+						},
+						"paymentType": "guarantee",
+						"cancellation": {
+							"numberOfNights": 1,
+							"deadline": "2020-02-09T18:00:00+01:00"
+						}
+					}
+				}
+			],
+			"self": "https://api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=DSSTOSTA&view=LIGHT"
+		}
+	]
+}
