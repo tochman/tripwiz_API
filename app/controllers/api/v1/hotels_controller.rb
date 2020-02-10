@@ -29,6 +29,8 @@ class Api::V1::HotelsController < ApplicationController
         lng = i['hotel']['longitude']
         price = i['offers'][0]['price']['total']
         address = i['hotel']['address']['lines'][0]
+        url = i['offers'][0]['room']['description']['text']
+        
         
         hotel = Hotel.create(
           name: name,
@@ -36,13 +38,14 @@ class Api::V1::HotelsController < ApplicationController
           lng: lng,
           price: price,
           address: address,
+          url: url,
           trip_id: params[:trip]
         )
         hotels << hotel if hotel.persisted?
       end
       hotels
     end
-    
+    binding.pry
     if hotels != []
       render json: hotels
     else
