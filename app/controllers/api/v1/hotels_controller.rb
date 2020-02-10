@@ -6,31 +6,27 @@ class Api::V1::HotelsController < ApplicationController
     if activity_type.activities != []
       lats = []
       longs = []
-      activity_type.activities.each do |i|
-        lat = i['lat']
-        lng = i['lng']
-        
-        lats << lat.to_f
-        longs << lng.to_f
+      activity_type.activities.each do |activity|
+        lats << activity['lat'].to_f
+        longs << activity['lng'].to_f
       end
-      avg_lat = lats.inject{ |sum, el| sum + el } / lats.size
-      avg_lng = longs.inject{ |sum, el| sum + el } / longs.size
+      avg_lat = lats.sum / lats.size
+      avg_lng = longs.sum / longs.size
       lat = avg_lat.round(5)
       lng = avg_lng.round(5)
     end
-
+    
     getHotels = get_hotels(params, lat, lng) 
     hotels = []
 
     if getHotels != 'error'
-      getHotels.each do |i|
-        name = i['hotel']['name']
-        lat = i['hotel']['latitude']
-        lng = i['hotel']['longitude']
-        price = i['offers'][0]['price']['total']
-        address = i['hotel']['address']['lines'][0]
-        url = i['offers'][0]['room']['description']['text']
-        
+      getHotels.each do |hotel|
+        name = hotel['hotel']['name']
+        lat = hotel['hotel']['latitude']
+        lng = hotel['hotel']['longitude']
+        price = hotel['offers'][0]['price']['total']
+        address = hotel['hotel']['address']['lines'][0]
+        url = hotel['offers'][0]['room']['description']['text']
         
         hotel = Hotel.create(
           name: name,
@@ -45,7 +41,7 @@ class Api::V1::HotelsController < ApplicationController
       end
       hotels
     end
-    binding.pry
+
     if hotels != []
       render json: hotels
     else
